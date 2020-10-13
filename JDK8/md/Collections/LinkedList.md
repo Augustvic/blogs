@@ -2,9 +2,9 @@
 
 ### 继承结构及完整源码解析
 
-[Iterable](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/Iterable.java) | [Collection](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/Collection.java) | [List](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/List.java) | [Queue](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/Queue.java) | [Deque](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/Deque.java) | [AbstractCollection](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/AbstractCollection.java) | [AbstractList](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/AbstractList.java) | [AbstractSequentialList](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/AbstractSequentialList.java) | [LinkedList](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/LinkedList.java)
+[Iterable](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/Iterable.java) | [Collection](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/Collection.java) | [List](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/List.java) | [Queue](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/Queue.java) | [Deque](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/Deque.java) | [AbstractCollection](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/AbstractCollection.java) | [AbstractList](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/AbstractList.java) | [AbstractSequentialList](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/AbstractSequentialList.java) | [LinkedList](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/LinkedList.java)
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/LinkedList.png" width=50% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/LinkedList.png" width=50% />
 
 ### 类属性
 
@@ -359,11 +359,11 @@ LinkedList 的空间花费则体现在它的每一个节点都需要消耗相当
 
 ### ArrayList 和 LinkedList 时间消耗
 
-对 ArrayList 和 LinkedList 分别进行 n 次添加，删除，查询操作，测试程序 [LinkedListAnalysis.java](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Analysis/LinkedListAnalysis.java) 在此项目的 src/Analysis 目录下。
+对 ArrayList 和 LinkedList 分别进行 n 次添加，删除，查询操作，测试程序 [LinkedListAnalysis.java](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Analysis/LinkedListAnalysis.java) 在此项目的 src/Analysis 目录下。
 
 实验结果如下图所示：
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/LinkedListAnalysis.png" width=50% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/LinkedListAnalysis.png" width=50% />
 
 实验结果与上述分析基本吻合。LinkedList 在查询时的性能，远远不如 ArrayList。而对于插入而言，如果是在指定节点处插入，那么 LinkedList 性能较好，如果是在指定索引处插入，LinkedList 首先要遍历链表找到指定索引处的节点，所以这种情况下的插入性能并不一定优于 ArrayList。值得注意的是，在 n 较大时，LinkedList 重复执行在列表尾部添加元素这一操作时，时间消耗超过了 ArrayList，可能是因为 LinkedList 频繁的 new，在一定程度上影响了其添加操作的性能。
 

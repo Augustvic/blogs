@@ -2,7 +2,7 @@
 
 ### 完整源码解析
 
-[CopyOnWriteArrayList](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/JUCCollections/CopyOnWriteArrayList.java)
+[CopyOnWriteArrayList](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/JUCCollections/CopyOnWriteArrayList.java)
 
 ### 类属性
 

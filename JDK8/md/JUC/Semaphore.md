@@ -4,7 +4,7 @@
 
 ### 完整源码解析
 
-[Semaphore](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/Semaphore.java)
+[Semaphore](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/Semaphore.java)
 
 ### 内部类 Sync
 
@@ -69,7 +69,7 @@ Semaphore 和 CountDownLatch 基本一样，同样是基于 AQS 实现一个公�
 
 ### 成员函数
 
-通常情况下，会使用 acquire 获取一个许可证，使用 release 释放一个许可证。除了这两个方法以外，还有包括等待时间、获取/释放许可证数量、是否相应中断、是否进入同步队列等待等参数的方法可以供程序员调用。它们和普通 Lock 中同名的函数的作用大同小异，此处不做说明，详见[完整源码解析](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/Semaphore.java)。
+通常情况下，会使用 acquire 获取一个许可证，使用 release 释放一个许可证。除了这两个方法以外，还有包括等待时间、获取/释放许可证数量、是否相应中断、是否进入同步队列等待等参数的方法可以供程序员调用。它们和普通 Lock 中同名的函数的作用大同小异，此处不做说明，详见[完整源码解析](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/Semaphore.java)。
 
 ### 应用实例
 

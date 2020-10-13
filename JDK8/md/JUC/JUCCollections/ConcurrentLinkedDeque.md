@@ -4,7 +4,7 @@ ConcurrentLinkedDeque 是非阻塞双向无界并发队列，主要利用 CAS �
 
 ### 完整源码解析
 
-[ConcurrentLinkedDeque](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/JUCCollections/ConcurrentLinkedDeque.java)
+[ConcurrentLinkedDeque](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/JUCCollections/ConcurrentLinkedDeque.java)
 
 ### 类属性
 

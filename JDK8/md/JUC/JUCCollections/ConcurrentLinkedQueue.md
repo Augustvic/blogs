@@ -4,7 +4,7 @@ ConcurrentLinkedQueue 是非阻塞无界并发队列，主要利用 CAS 实现�
 
 ### 完整源码解析
 
-[ConcurrentLinkedQueue](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/JUCCollections/ConcurrentLinkedQueue.java)
+[ConcurrentLinkedQueue](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/JUCCollections/ConcurrentLinkedQueue.java)
 
 ### 类属性
 

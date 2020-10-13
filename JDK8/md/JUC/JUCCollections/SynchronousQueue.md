@@ -2,7 +2,7 @@
 
 “没有容量”的阻塞队列，每个插入操作都要等待其他线程的删除操作，每个删除操作都要等待插入操作，实际相当于将数据从一个线程传递到另一个线程。包括公平和非公平两种模式。
 
-“没有容量”并不是说队列中不保存任何元素/节点，实际上队列中依然有节点，节点内可能会有元素，也可能没有。此类的基本思想和 LinkedTransferQueue 类似，队列中只存在同一种类型的节点，要么是数据节点，要么是非数据节点（等待数据的节点），详见 [LinkedTransferQueue](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/md/JUC/JUCCollections/LinkedTransferQueue.md)。
+“没有容量”并不是说队列中不保存任何元素/节点，实际上队列中依然有节点，节点内可能会有元素，也可能没有。此类的基本思想和 LinkedTransferQueue 类似，队列中只存在同一种类型的节点，要么是数据节点，要么是非数据节点（等待数据的节点），详见 [LinkedTransferQueue](https://github.com/Augustvic/Blogs/tree/master/JDK8/md/JUC/JUCCollections/LinkedTransferQueue.md)。
 
 公平模式通过队列（FIFO）实现，非公平模式通过栈（LIFO）实现。
 
@@ -10,7 +10,7 @@
 
 ### 完整源码解析
 
-[SynchronousQueue](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/JUCCollections/SynchronousQueue.java)
+[SynchronousQueue](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/JUCCollections/SynchronousQueue.java)
 
 ### 非公平模式 TransferStack
 
@@ -18,7 +18,7 @@
 
 #### 内部类
 
-属性 mode 表示此节点的类型（数据节点或非数据节点），其他详见 [LinkedTransferQueue](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/md/JUC/JUCCollections/LinkedTransferQueue.md)。
+属性 mode 表示此节点的类型（数据节点或非数据节点），其他详见 [LinkedTransferQueue](https://github.com/Augustvic/Blogs/tree/master/JDK8/md/JUC/JUCCollections/LinkedTransferQueue.md)。
 
 ```java
         /** TransferStacks 的节点类 */

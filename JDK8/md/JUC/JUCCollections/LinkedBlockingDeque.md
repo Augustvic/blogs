@@ -4,7 +4,7 @@ LinkedBlockingDeque 是双向有界阻塞队列。元素顺序支持 FIFO 和 LI
 
 ### 完整源码解析
 
-[LinkedBlockingDeque](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/JUCCollections/LinkedBlockingDeque.java)
+[LinkedBlockingDeque](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/JUCCollections/LinkedBlockingDeque.java)
 
 ### 小结
 
@@ -12,4 +12,4 @@ LinkedBlockingDeque 是双向有界阻塞队列。元素顺序支持 FIFO 和 LI
 
 此类实现了 Stack, Queue, Deque 的所有方法。
 
-实现思路请参考 [LinkedBlockingQueue](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/md/JUC/JUCCollections/LinkedBlockingQueue.md)。
+实现思路请参考 [LinkedBlockingQueue](https://github.com/Augustvic/Blogs/tree/master/JDK8/md/JUC/JUCCollections/LinkedBlockingQueue.md)。

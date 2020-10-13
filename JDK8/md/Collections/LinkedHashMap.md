@@ -8,7 +8,7 @@ LinkedHashMap 不保证线程安全。
 
 ### 完整源码解析
 
-[LinkedHashMap](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/LinkedHashMap.java)
+[LinkedHashMap](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/LinkedHashMap.java)
 
 ### 内部类 Entry
 

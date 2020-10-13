@@ -2,9 +2,9 @@
 
 ### 继承结构及完整源码解析
 
-[Iterable](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/Iterable.java) | [Collection](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/Collection.java) | [List](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/List.java) | [AbstractCollection](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/AbstractCollection.java) | [AbstractList](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/AbstractList.java) | [Vector](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/Vector.java) | [Stack](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/Stack.java)
+[Iterable](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/Iterable.java) | [Collection](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/Collection.java) | [List](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/List.java) | [AbstractCollection](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/AbstractCollection.java) | [AbstractList](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/AbstractList.java) | [Vector](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/Vector.java) | [Stack](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/Stack.java)
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/Stack.png" width=50% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/Stack.png" width=50% />
 
 ### ArrayList 与 Vector
 

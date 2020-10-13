@@ -2,15 +2,15 @@
 
 ### 继承结构及完整源码解析
 
-[Executor](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/Executor.java) | [ExecutorService](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/ExecutorService.java) | [AbstractExecutorService](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/AbstractExecutorService.java) | [ThreadPoolExecutor](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/ThreadPoolExecutor.java)
+[Executor](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/Executor.java) | [ExecutorService](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/ExecutorService.java) | [AbstractExecutorService](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/AbstractExecutorService.java) | [ThreadPoolExecutor](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/ThreadPoolExecutor.java)
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/ThreadPoolExecutor.png" width=70% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/ThreadPoolExecutor.png" width=70% />
 
 ### 线程池状态
 
 ThreadPoolExecutor 线程池有 RUNNING, SHUTDOWN, STOP, TIDYING, TERMINATED 五种状态，状态之间的关系如下图所示（引用自[JUC源码分析-线程池篇（一）：ThreadPoolExecutor](https://www.jianshu.com/p/7be43712ef21)）：
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/ThreadPoolExecutor2.png" width=70% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/ThreadPoolExecutor2.png" width=70% />
 
 RUNNING：正常运行状态，接受新的任务（如果没有达到拒绝策略的条件）
 

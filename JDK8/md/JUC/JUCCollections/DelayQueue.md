@@ -4,7 +4,7 @@ DelayQueue 是无界延时阻塞队列。元素必须实现 Delay 接口，并�
 
 ### 完整源码解析
 
-[DelayQueue](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/JUCCollections/DelayQueue.java)
+[DelayQueue](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/JUCCollections/DelayQueue.java)
 
 ### 类属性
 

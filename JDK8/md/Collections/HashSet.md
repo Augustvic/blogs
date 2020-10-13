@@ -2,7 +2,7 @@
 
 ### 完整源码解析
 
-[HashSet](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/HashSet.java)
+[HashSet](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/HashSet.java)
 
 ### 小结
 

@@ -2,7 +2,7 @@
 
 ### 完整源码解析
 
-[AbstractOwnableSynchronizer](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/AbstractOwnableSynchronizer.java) | [AbstractQueuedSynchronizer](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/AbstractQueuedSynchronizer.java)
+[AbstractOwnableSynchronizer](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/AbstractOwnableSynchronizer.java) | [AbstractQueuedSynchronizer](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/AbstractQueuedSynchronizer.java)
 
 ### 概述
 
@@ -19,7 +19,7 @@ AQS 的核心思想是：线程请求共享资源，如果资源可用，则线�
 
 AQS 中包含两种队列，如下图所示：
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/AQS.png" width=50% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/AQS.png" width=50% />
 
 同步队列是双向队列，是必须有的队列；Condition 队列（条件队列）是单向队列，可有可无。一个 AQS 中可以有零个或多个 Condition 队列。
 

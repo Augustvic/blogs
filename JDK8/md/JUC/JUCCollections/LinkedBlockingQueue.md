@@ -4,7 +4,7 @@ LinkedBlockingQueue 是单向有界阻塞队列。元素顺序为 FIFO，使用�
 
 ### 完整源码解析
 
-[LinkedBlockingQueue](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/JUCCollections/LinkedBlockingQueue.java)
+[LinkedBlockingQueue](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/JUCCollections/LinkedBlockingQueue.java)
 
 ### 类属性
 

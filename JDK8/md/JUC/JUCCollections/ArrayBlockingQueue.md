@@ -2,7 +2,7 @@
 
 ### 完整源码解析
 
-[ArrayBlockingQueue](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/JUCCollections/ArrayBlockingQueue.java)
+[ArrayBlockingQueue](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/JUCCollections/ArrayBlockingQueue.java)
 
 ### 类属性
 

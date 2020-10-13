@@ -2,7 +2,7 @@
 
 CompletableFuture 中最常用的功能是回调，后文列举了和回调有关的一系列方法。
 
-完整源码请参考 [CompletableFuture.java](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/CompletableFuture.java)
+完整源码请参考 [CompletableFuture.java](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/CompletableFuture.java)
 
 ### 一次执行过程
 

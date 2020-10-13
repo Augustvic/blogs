@@ -10,9 +10,9 @@ HashMap 本质上是一个数组，数组用来存储 Node 节点，Node 节点�
 
 ### 继承结构及完整源码解析
 
-[Map](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/Map.java) | [AbstractMap](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/AbstractMap.java) | [HashMap](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/HashMap.java)
+[Map](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/Map.java) | [AbstractMap](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/AbstractMap.java) | [HashMap](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/HashMap.java)
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/HashMap.png" width=50% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/HashMap.png" width=50% />
 
 ### 静态常量
  
@@ -566,7 +566,7 @@ remove 和 removeNode 函数用来删除 map 中指定 key 对应的映射。首
 
 首先计算新的容量和新的阈值，计算方法分成以下几种情况：
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/HashMap1.png" width=70% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/HashMap1.png" width=70% />
 
 重新分配桶中元素的位置，分为三种情况：如果桶中有元素且不存在 hash 冲突，重新计算其位置即可；如果桶中数据结构为红黑树，调用红黑树的 split 操作重新分配；如果桶中数据结构为链式结构，那么将所有节点分为两类，一类保存在低位中（小于 oldCap 的位置中），一类保存在高位中（新的桶里）。
 
@@ -843,7 +843,7 @@ table 没有达到转化成树结构的容量时，进行扩容操作。否则�
 
 其中插入新节点之后自平衡的情况如下图所示（引用自《[30张图带你彻底理解红黑树](https://www.jianshu.com/p/e136ec79235c)》）
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/HashMap_putTreeVal.png" width=100% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/HashMap_putTreeVal.png" width=100% />
 
 其中 I 表示插入节点，P 表示插入节点的父节点，PP 表示插入节点的祖先节点，S 表示插入节点的叔叔节点。
 
@@ -1062,7 +1062,7 @@ table 没有达到转化成树结构的容量时，进行扩容操作。否则�
 
 删除替代节点之后自平衡的所有情景如下图所示（引用自《[30张图带你彻底理解红黑树](https://www.jianshu.com/p/e136ec79235c)》）
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/HashMap_removeTreeNode.png" width=100% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/HashMap_removeTreeNode.png" width=100% />
 
 图中 R 表示替代节点，P 表示替代节点的父节点，S 表示替代节点的兄弟节点，SL 表示兄弟节点的左子节点，SR 表示兄弟节点的右子节点。
 

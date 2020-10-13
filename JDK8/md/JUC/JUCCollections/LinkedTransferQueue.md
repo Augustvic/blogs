@@ -4,7 +4,7 @@ LinkedTransferQueue 是单向链表结构的无界阻塞队列（TransferQueue �
 
 ### 完整源码解析
 
-[LinkedTransferQueue](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/JUCCollections/LinkedTransferQueue.java)
+[LinkedTransferQueue](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/JUCCollections/LinkedTransferQueue.java)
 
 ### 类属性
 
@@ -160,7 +160,7 @@ LinkedTransferQueue 队列实现的基础是单向链表，且使用松弛度减
 
 一般的队列 put 和 take 分别在不同的方法中实现，而此类中所有的操作实际上使用的是同一个函数： xfer，可以这么做是因为 take 和 put 操作的流程基本一样，如下图所示：
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/LinkedTransferQueue.png" width=70% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/LinkedTransferQueue.png" width=70% />
 
 使用“匹配”的方式确定下一步操作是删除队列头部元素还是在队列尾部添加元素。从队列头部节点开始查找有效节点，找到有效节点才开始匹配。
 

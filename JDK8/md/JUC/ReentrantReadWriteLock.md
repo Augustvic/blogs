@@ -2,7 +2,7 @@
 
 ### 完整源码解析
 
-[ReadWriteLock](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/ReadWriteLock.java) | [ReentrantReadWriteLock](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/ReentrantReadWriteLock.java)
+[ReadWriteLock](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/ReadWriteLock.java) | [ReentrantReadWriteLock](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/ReentrantReadWriteLock.java)
 
 ### 概览
 

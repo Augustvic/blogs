@@ -2,9 +2,9 @@
 
 ### 继承结构及完整源码解析
 
-[Map](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/Map.java) | [SortedMap](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/SortedMap.java) | [NavigableMap](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/NavigableMap.java) | [AbstractMap](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/AbstractMap.java) | [TreeMap](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/TreeMap.java)
+[Map](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/Map.java) | [SortedMap](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/SortedMap.java) | [NavigableMap](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/NavigableMap.java) | [AbstractMap](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/AbstractMap.java) | [TreeMap](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/TreeMap.java)
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/TreeMap.png" width=70% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/TreeMap.png" width=70% />
 
 ### 类属性
 
@@ -36,7 +36,7 @@
 
 ### 成员函数
 
-TreeMap 基本数据结构为红黑树，与红黑树相关内容参照 [HashMap](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/md/HashMap.md)。
+TreeMap 基本数据结构为红黑树，与红黑树相关内容参照 [HashMap](https://github.com/Augustvic/Blogs/blob/master/JDK8/src/Collections/HashMap.java)。
 
 **查找方法**
 

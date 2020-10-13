@@ -2,7 +2,7 @@
 
 ### 完整源码解析
 
-[ThreadLocalMap](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/ThreadLocal.java) | [ThreadLocal](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/ThreadLocal.java)
+[ThreadLocalMap](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/ThreadLocal.java) | [ThreadLocal](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/ThreadLocal.java)
 
 ### 基本原理
 
@@ -12,7 +12,7 @@
 
 Thread，ThreadLocal 和 ThreadLocalMap 的关系如下图所示：
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/ThreadLocal.png" width=50% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/ThreadLocal.png" width=50% />
 
 ### 内部类 ThreadLocalMap
 

@@ -2,9 +2,9 @@
 
 ### 继承结构及完整源码解析
 
-[Iterable](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/Iterable.java) | [Collection](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/Collection.java) | [Queue](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/Queue.java) | [Deque](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/Deque.java) | [AbstractCollection](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/AbstractCollection.java) | [ArrayDeque](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Collections/ArrayDeque.java)
+[Iterable](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/Iterable.java) | [Collection](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/Collection.java) | [Queue](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/Queue.java) | [Deque](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/Deque.java) | [AbstractCollection](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/AbstractCollection.java) | [ArrayDeque](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Collections/ArrayDeque.java)
  
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/ArrayDeque.png" width=50% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/ArrayDeque.png" width=50% />
  
 ### 类属性
  
@@ -46,7 +46,7 @@ calculateSize 函数用于计算比指定参数大且最为 2 的整数次方的
 
 doubleCapacity 函数用于在队列满的时候将队列支撑数组扩展成原来的两倍，过程如下图所示：
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/ArrayDequeDoubleCapacity.png" width=70% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/ArrayDequeDoubleCapacity.png" width=70% />
 
 copyElements 函数用于将支撑数组中的元素按顺序复制到指定数组中。由于队列为循环队列，所以分为两种情况：head 在 tail 之前，和 head 在 tail 之后。
 
@@ -285,15 +285,15 @@ tail 指针的变化同理。
 
 测试 ArrayDeque 和 LinkedList 性能。对于两类对象，分别调用 addFirst 插入 n 次、调用 removeFirst 删除 n 次、插入（addFirst），查询（getFirst），删除（removeFirst）n 次，测试这三种情况下两个类对象的性能表现。
 
-测试程序 [ArrayDequeAnalysis.java](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/Analysis/ArrayDequeAnalysis.java) 的源码在此项目的 src/Analysis 目录下。
+测试程序 [ArrayDequeAnalysis.java](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/Analysis/ArrayDequeAnalysis.java) 的源码在此项目的 src/Analysis 目录下。
 
 结果如下图所示：
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/ArrayDequeAnalysis1.png" width=50% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/ArrayDequeAnalysis1.png" width=50% />
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/ArrayDequeAnalysis2.png" width=50% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/ArrayDequeAnalysis2.png" width=50% />
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/ArrayDequeAnalysis3.png" width=50% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/ArrayDequeAnalysis3.png" width=50% />
 
 容易看出，在数据量较大的时候，ArrayDeque 性能表现优于 LinkedList。
 
@@ -301,11 +301,11 @@ tail 指针的变化同理。
 
 同样的，测试  ArrayDeque 和 Stack 性能：
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/ArrayDequeAnalysis4.png" width=50% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/ArrayDequeAnalysis4.png" width=50% />
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/ArrayDequeAnalysis5.png" width=50% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/ArrayDequeAnalysis5.png" width=50% />
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/ArrayDequeAnalysis6.png" width=50% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/ArrayDequeAnalysis6.png" width=50% />
 
 Stack 类继承自 Vector 类，函数的实现基本与 Vector 相同，Vector 底层数据结构与 ArrayDeque 均为数组，ArrayDeque 为循环数组。ArrayDeque 在数据量大的时候，插入及删除操作的性能均优于 Stack。
 

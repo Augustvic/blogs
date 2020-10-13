@@ -10,25 +10,25 @@ ConcurrentSkipListMap 中有以下两点值得注意的地方：
 
 ### 完整源码解析
 
-[ConcurrentSkipListMap](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/JUCCollections/ConcurrentSkipListMap.java)
+[ConcurrentSkipListMap](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/JUCCollections/ConcurrentSkipListMap.java)
 
 ### 跳跃表
 
 跳跃表是一种可以用来代替平衡树的数据结构，实际上就是在链表之上添加多级索引，通过索引实现链表中的快速查找。如果有下面这样的基础链表：
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/ConcurrentSkipListMap1.png" width=70% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/ConcurrentSkipListMap1.png" width=70% />
 
 在链表之上构造两层索引，如下所示：
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/ConcurrentSkipListMap2.png" width=70% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/ConcurrentSkipListMap2.png" width=70% />
 
 在最初的链表中查找节点 20 需要从头遍历所有节点，在跳跃表中从最高层的头结点开始查找，路径如下图所示，只需要经过索引节点 1,5,17,20 即可：
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/ConcurrentSkipListMap3.png" width=70% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/ConcurrentSkipListMap3.png" width=70% />
 
 标准化的跳跃表中每两个元素提取一个元素作为上一层的索引，在数据量大的时候，如下图所示：
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/ConcurrentSkipListMap4.png" width=70% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/ConcurrentSkipListMap4.png" width=70% />
 
 这是典型的以空间换时间的数据结构。每一次需要考虑的元素减少一半，查找的时间复杂度基本相当于平衡二叉树。
 
@@ -38,7 +38,7 @@ ConcurrentSkipListMap 中有以下两点值得注意的地方：
 
 ConcurrentSkipListMap 中的跳跃表主要由三种作为内部类的节点构成，他们之间的关系如下：
 
-<img src="https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/images/ConcurrentSkipListMap5.png" width=70% />
+<img src="https://github.com/Augustvic/Blogs/tree/master/JDK8/images/ConcurrentSkipListMap5.png" width=70% />
 
 BASE_HEADER 为 Object 类型，其他的节点类型在此类中已经定义。
 

@@ -4,7 +4,7 @@ PriorityBlockingQueue 是支持多线程的无界优先级阻塞队列，基于�
 
 ### 完整源码解析
 
-[PriorityBlockingQueue](https://github.com/Augustvic/JavaSourceCodeAnalysis/blob/master/src/JUC/JUCCollections/PriorityBlockingQueue.java)
+[PriorityBlockingQueue](https://github.com/Augustvic/Blogs/tree/master/JDK8/src/JUC/JUCCollections/PriorityBlockingQueue.java)
 
 ### 类属性
 
