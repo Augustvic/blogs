@@ -7,7 +7,7 @@
 This section is an analysis of the Java source code
 (JDK8), includes collections (in java.util) and concurrency tools (in java.util.concurrent). The former covers the most commonly used data structures, such as List, Queue, and Map. (It is worth mentioning that HashMap in this package appears in almost every java project.) The latter is one of the secrets of Java's longevity (especially with the popularization of multi-core processors), which includes ThreadLocal(not in java.util.concurrent), Synchronizer, Concurrency Collections, and Thread Pool.
 
-* Collections in java.util
+### Collections in java.util
 
 | **Category** | **Content** |
 | :- | :- |
@@ -15,7 +15,7 @@ This section is an analysis of the Java source code
 | Set | HashSet, TreeSet |
 | Map | HashMap, TreeMap, LinkedHashMap |
 
-* Concurrency Tools in java.util.concurrent
+### Concurrency Tools in java.util.concurrent
 
 | **Category** | **Content** |
 | :- | :- |
