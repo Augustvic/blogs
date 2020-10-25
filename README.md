@@ -24,7 +24,7 @@ This section is an analysis of the Java source code
 | Collections | *CAS*, CopyOnWriteArrayList, ConcurrentHashMap, ConcurrentSkipListMap, ArrayBlockingQueue, LinkedBlockingQueue, LinkedBlockingDeque, PriorityBlockingQueue, ConcurrentLinkedQueue, ConcurrentLinkedDeque, LinkedTransferQueue, SynchronousQueue, DelayQueue |
 | Thread Pool | FutureTask, CompletableFuture, ThreadPoolExecutor, ScheduledThreadPoolExecutor |
 
-See more [details](https://github.com/Augustvic/Blogs/tree/master/JDK8).
+*See more [details](https://github.com/Augustvic/Blogs/tree/master/JDK8).*
 
 ## Dubbo
 
@@ -39,7 +39,7 @@ Most of the following source code analysis is based on the official website and 
 * RPC extension
 * Common model
 
-See more [details](https://github.com/Augustvic/Blogs/tree/master/Dubbo).
+*See more [details](https://github.com/Augustvic/Blogs/tree/master/Dubbo).*
 
 ## Blog
 
@@ -51,4 +51,4 @@ This section is for other blogs rather than source code analysis, mainly include
 * Network
 * Design Pattern
 
-See more [details](https://github.com/Augustvic/Blogs/tree/master/Blog).
+*See more [details](https://github.com/Augustvic/Blogs/tree/master/Blog).*
