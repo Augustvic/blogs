@@ -1,11 +1,5 @@
 # Blog
 
-## 最近更新
-
-* [2020/07/18] 更新 [事务，隔离级别和并发控制](https://blog.csdn.net/Victorgcx/article/details/102711881) 中关于 MVCC 和幻读的测试。
-* [2020/07/15] 更新 [LRU 和 LFU 缓存淘汰策略](https://blog.csdn.net/Victorgcx/article/details/104378378) 中的 LFU 算法，时间复杂度降为常数时间。
-* [2020/06/10] 更新 [基于 Redis 的分布式令牌桶、漏桶、滑动窗口实现](https://blog.csdn.net/Victorgcx/article/details/104248819)，添加滑动窗口。
-
 ## Java
 
 ### 基础
